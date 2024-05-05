@@ -1,0 +1,136 @@
+body{
+
+    background-color: darkgray;
+}
+
+
+::-webkit-scrollbar {
+    width: 0; /* Largura da barra de rolagem */
+}
+
+/*inicio da estilização do cabeçalho*/
+.cabecalho {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: black;
+    margin: 0;
+    height: 90px;
+    width: 100%;
+    
+
+}
+
+/*orientação da lista e menu*/
+
+#menu {
+
+    position: fixed;
+    top: 2px;
+    left: 15px;
+    display: flex;
+    height: 90px;
+
+}
+
+/*orientação da lista e menu*/
+
+.listaMenu {
+
+    display: block;
+    text-align: center;
+    top: 9px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    
+    
+}
+/*orientação da lista e menu*/
+
+.listaMenu li {
+
+    display: inline-block;
+    margin-right: 90px;
+    text-decoration: none;
+    
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ /* inicio da  animação do menu */ 
+
+ul:hover li a {
+
+    transform: scale(1.5);
+    opacity: 0.5;
+    filter: blur(1px);
+    text-decoration: none;
+
+
+}
+
+
+/*efeito para q quando por o mous eme cima da lista menu eles ficarem um pouco  mais pequenos e desfoque se o omouse tiver em cima ele se destaque*/
+
+
+ul li a:hover {
+
+    transform: scale(2);
+    opacity: 1;
+    filter:blur(0);
+    color:#fff;
+    text-decoration: none;
+
+}
+    /* final da animação menu*/
+
+
+/* estilização da caixa */
+.caixa {
+
+    top: 100px;
+    position: relative;
+    background-color: rgba(95, 94, 94, 0.438);
+    border-radius: 25px;
+    z-index: -1;
+
+}
+
+/* posição da imagem dos certificados*/
+.caixa img {
+
+    top: -40px;
+    left: 15px;
+    margin: 5px;
+    padding: 0%;
+    position: relative;
+    display: block;
+
+}
+
+/*posição do paragrafo e estilizaçao*/
+.caixa p {
+
+    top: 35px;
+    left: 23%;
+    position: relative;
+    display: flex;
+    font-size: large;
+
+}
+/*posição e estilizzação do titulo de cada certificado*/
+#titulo {
+
+    top: 25px;
+    left: 23%;
+    position: relative;
+    display: flex;
+
+}

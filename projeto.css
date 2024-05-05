@@ -1,0 +1,179 @@
+body{
+
+    background-color: darkgray;
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Largura da barra de rolagem */
+}
+
+/*inicio da estilização do cabeçalho*/
+.cabecalho {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: black;
+    margin: 0;
+    height: 90px;
+    width: 100%;
+    
+
+}
+/*orientação da lista e menu*/
+#menu {
+
+    position: fixed;
+    top: 2px;
+    left: 15px;
+    display: flex;
+    height: 90px;
+
+}
+/*orientação da lista e menu*/
+.listaMenu {
+
+    display: block;
+    text-align: center;
+    top: 9px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+        
+}
+/*orientação da lista e menu*/
+.listaMenu li {
+
+    display: inline-block;
+    margin-right: 90px;
+    text-decoration: none;
+    
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ /* inicio da  animação do menu */ 
+
+ul:hover li a {
+
+    transform: scale(1.5);
+    opacity: 0.5;
+    filter: blur(1px);
+    text-decoration: none;
+
+}
+
+/*efeito para q quando por o mous eme cima da lista menu eles ficarem um pouco  mais pequenos e desfoque se o omouse tiver em cima ele se destaque*/
+ul li a:hover {
+
+    transform: scale(2);
+    opacity: 1;
+    filter:blur(0);
+    color:#fff;
+    text-decoration: none;
+
+}
+    /* final da animação menu*/
+
+
+/* estilização do titulo da pagina dos projetos*/
+.titulo {
+
+    top: 110px;
+    left: 50px;
+    width: 290px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #000000;
+    border-radius: 50%;
+
+}
+
+#titulo {
+
+    top: 6px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+
+}
+
+/*caixa projetos*/
+.projetos {
+
+    width: 365px;
+    height: 455px;
+    background-color: #40314e;
+    border-radius: 20px;
+    left: 70px;
+    top: 150px;
+    display:  block;
+    position: relative;
+    text-decoration: none;
+
+}
+
+/*posição da imagem do projeto*/
+#imagem_projeto {
+
+    top: 25px;
+    left: 40px;
+    justify-content: center;
+    position: relative;
+    display: block;
+
+}
+/*posição e estilo do titulo e da explicação breve do projeto*/
+.projetos h2 {
+
+    top: 30px;
+    left: 15px;
+    margin: 0;
+    position: relative;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+
+}
+
+.projetos p {
+
+    top: 15px;
+    position: relative;
+    display: block;
+    text-align: justify;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+
+}
+
+/*estilização e posição do botão que linka o projeto no guithub*/
+#button {
+
+    top: 50px;
+    left: 110px;
+    display: block;
+    position: relative; 
+    justify-content: center;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #9b9c9a;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+}
+.link {
+
+    text-decoration: none;/*tiar o underline da tag <a>*/
+
+}

@@ -1,0 +1,181 @@
+body{
+
+    background-color: darkgray; /*cor de fundo da pagina*/
+
+}
+
+
+/*inicio da estilização do cabeçalho*/
+.cabecalho { 
+
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: black;
+    margin: 0;
+    height: 90px;
+    width: 100%;
+
+}
+
+
+/*orientação da lista e menu*/
+
+
+#menu {
+
+    position: fixed;
+    top: 2px;
+    left: 15px;
+    display: flex;
+    height: 90px;
+
+}
+
+/*orientação da lista e menu*/
+
+.listaMenu {
+
+    display: block;
+    text-align: center;
+    top: 9px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    
+}
+
+/*orientação da lista e menu*/
+
+.listaMenu li {
+
+    display: inline-block;
+    margin-right: 90px;
+    text-decoration: none;
+    
+}
+
+ul li a{
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+ /* inicio da  animação do menu */ 
+
+ul:hover li a {
+
+    transform: scale(1.5);
+    opacity: 0.5;
+    filter: blur(1px);
+    text-decoration: none;
+
+}
+
+    /*efeito para q quando por o mous eme cima da lista menu eles ficarem um pouco  mais pequenos e desfoque se o omouse tiver em cima ele se destaque*/
+
+ul li a:hover {
+
+    transform: scale(2);
+    opacity: 1;
+    filter:blur(0);
+    color:#fff;
+    text-decoration: none;
+
+}
+
+    /* final da estilização do cabeçlho*/
+
+    /*inicio da estilização dos botões das redes sociais*/
+.titulo{
+    
+    width: 500px;
+    height: auto;
+    top: 150px;
+    left: 490px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+#texto {
+
+    color: #fff;
+
+}
+
+
+.caixaContato{
+
+    width:85%;
+    height: 200px;
+    top:  260px;
+    left: 200px; 
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+
+}
+
+.contato {
+
+    width:  90px;
+    height: 90px;
+    display: inline-block;
+    align-items: center;
+    justify-content:space-between;
+    margin-right: 150px;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    border-radius: 30px;
+    transition: all .3s;
+    border: 1px solid rgba(124, 121, 121, 0.466);
+
+}
+
+.BT  {
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    pointer-events: none;
+    background: #0c0c0c;
+    z-index: -1;
+    transition: all .3s;
+
+}
+    /*animação para quando o mouse estiver em cima do botão*/
+.contato:hover .BT {
+
+    transform: rotate(45deg);
+    transform-origin: bottom;
+
+}
+
+.contato:hover {
+
+    background-color: rgba(156, 156, 156, 0.897);
+    backdrop-filter: blur(4px);
+
+}
+
+.contato img  {
+
+    width: 40px;
+    height:  auto;
+
+}
